@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /qr-card.html
+
+Sitemap: https://rioscafe.clonal.health/sitemap.xml
