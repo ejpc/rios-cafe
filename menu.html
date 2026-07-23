@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — Rio's Cafe</title>
+<style>
+  :root{ --bg:#fdf6ee; --ink:#3a2a1d; --soft:#7a6552; --accent:#9c2b22; --accent2:#e7b27a; --card:#fffdf9; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{ font-family:Georgia,'Times New Roman',serif; color:var(--ink); background:var(--bg); line-height:1.5; }
+  header{ display:flex; justify-content:space-between; align-items:center; padding:18px 28px; border-bottom:2px solid var(--accent2); }
+  header .logo{ font-size:24px; font-weight:bold; letter-spacing:1px; color:var(--accent); }
+  header nav a{ color:var(--soft); text-decoration:none; margin-left:18px; font-size:15px; }
+  header nav a:hover{ color:var(--accent); }
+  .hero{ text-align:center; padding:46px 24px 24px; }
+  .hero h1{ font-size:42px; color:var(--accent); }
+  .hero p{ color:var(--soft); font-size:18px; }
+  section{ max-width:760px; margin:0 auto; padding:26px 24px; }
+  h2{ color:var(--accent); font-size:26px; margin-bottom:6px; border-bottom:2px solid var(--accent2); padding-bottom:8px; }
+  .sub{ color:var(--soft); font-style:italic; margin:14px 0 8px; font-size:16px; }
+  .row{ display:flex; justify-content:space-between; align-items:baseline; padding:9px 0; border-bottom:1px dotted #e7d6c2; }
+  .name{ display:flex; flex-direction:column; padding-right:16px; }
+  .name b{ font-size:17px; font-weight:bold; }
+  .name .desc{ font-size:14px; color:var(--soft); font-style:italic; }
+  .price{ color:var(--accent); font-weight:bold; font-size:16px; white-space:nowrap; }
+  .note{ max-width:760px; margin:0 auto; padding:16px 24px; color:var(--soft); font-size:14px; font-style:italic; text-align:center; }
+  .back{ text-align:center; padding:36px 24px; }
+  .back a{ display:inline-block; background:var(--accent); color:#fff; text-decoration:none; padding:14px 30px; border-radius:30px; font-size:17px;
+    box-shadow:0 5px 0 #7d2019; transition:transform .1s ease, box-shadow .1s ease, background .2s ease; }
+  .back a:hover{ background:#ab3128; transform:translateY(-2px); box-shadow:0 7px 0 #7d2019; }
+  .back a:active{ transform:translateY(4px); box-shadow:0 1px 0 #7d2019; }
+  footer{ background:#3a2a1d; color:#f5e6d3; text-align:center; padding:30px 24px; font-size:15px; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">Rio's Cafe</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Our Menu</h1>
+    <p>Made to order, fresh every day &middot; Open daily</p>
+  </div>
+
+  <section>
+    <h2>Breakfast</h2>
+    <p class="sub">Served all day &middot; Big Breakfasts</p>
+    <div class="row"><span class="name"><b>The Full English</b><span class="desc">1 Suffolk bacon, 1 butchers sausage, tomato, beans, mushrooms, free range egg, 2 hash browns &amp; toast</span></span><span class="price">&pound;10.20</span></div>
+    <div class="row"><span class="name"><b>The Mega English</b><span class="desc">2 Suffolk bacon, 2 butchers sausages, 2 free range eggs, mushrooms, 2 hash browns, beans, tomato &amp; 2 toast</span></span><span class="price">&pound;13.30</span></div>
+    <div class="row"><span class="name"><b>The Veggie Breakfast</b><span class="desc">2 veggie sausages, tomato, mushrooms, beans, free range egg, 2 hash browns &amp; toast &mdash; or make it vegan</span></span><span class="price">&pound;10.20</span></div>
+    <div class="row"><span class="name"><b>The Mini English</b><span class="desc">1 Suffolk bacon, 1 butchers sausage, beans, free range egg &amp; toast</span></span><span class="price">&pound;7.60</span></div>
+    <div class="row"><span class="name"><b>Rio's Bap</b><span class="desc">2 Suffolk bacon, 2 butchers sausages, 2 hash browns, free range egg &amp; cheese &mdash; or make it veggie</span></span><span class="price">&pound;8.60</span></div>
+    <p class="sub">Smaller Breakfasts</p>
+    <div class="row"><span class="name"><b>Suffolk Bacon Bap or Sandwich</b><span class="desc">3 rashers &middot; add an egg 0.65</span></span><span class="price">&pound;5.50</span></div>
+    <div class="row"><span class="name"><b>Butchers Sausage Bap or Sandwich</b><span class="desc">or make it veggie</span></span><span class="price">&pound;5.75</span></div>
+    <div class="row"><span class="name"><b>Egg, Hash Brown &amp; Mushroom Bap</b></span><span class="price">&pound;6.20</span></div>
+    <div class="row"><span class="name"><b>Poached Eggs on Toast</b><span class="desc">2 free range eggs on white or seeded wholemeal &middot; add bacon 2.50 or mushrooms 1.30</span></span><span class="price">&pound;6.50</span></div>
+    <div class="row"><span class="name"><b>Rio's Wrap</b><span class="desc">1 Suffolk bacon, 1 butchers sausage, 1 hash brown, free range egg &amp; cheese &middot; add extras from 0.65</span></span><span class="price">&pound;6.75</span></div>
+  </section>
+
+  <section>
+    <h2>Lunch</h2>
+    <p class="sub">Served from 11.30 &middot; Sandwiches &mdash; with a dressed garnish &amp; Rio's homemade slaw. White, seeded wholemeal or GF bread.</p>
+    <div class="row"><span class="name"><b>B.L.T</b><span class="desc">bacon, lettuce &amp; tomato</span></span><span class="price">&pound;8.20</span></div>
+    <div class="row"><span class="name"><b>Butchers Ham, Salad &amp; Mayo</b></span><span class="price">&pound;8.20</span></div>
+    <div class="row"><span class="name"><b>Tuna Mayo &amp; Sweetcorn</b></span><span class="price">&pound;8.20</span></div>
+    <div class="row"><span class="name"><b>Brie &amp; Cranberry</b><span class="desc">add 2 Suffolk bacon 2.50</span></span><span class="price">&pound;8.20</span></div>
+    <p class="sub">Toasties &amp; Paninis &mdash; with a dressed garnish &amp; Rio's homemade slaw</p>
+    <div class="row"><span class="name"><b>Butchers Ham &amp; Cheese</b></span><span class="price">&pound;8.50 / 8.90</span></div>
+    <div class="row"><span class="name"><b>Brie &amp; Cranberry</b><span class="desc">add 2 Suffolk bacon 2.50</span></span><span class="price">&pound;8.50 / 8.90</span></div>
+    <div class="row"><span class="name"><b>Tuna Melt</b></span><span class="price">&pound;8.50 / 8.90</span></div>
+    <div class="row"><span class="name"><b>Green Pesto, Red Onion, Tomato &amp; Mushroom</b><span class="desc">add cheese 0.65</span></span><span class="price">&pound;8.50 / 8.90</span></div>
+    <p class="sub">Fairfield Farm Jackets &mdash; served with a dressed salad</p>
+    <div class="row"><span class="name"><b>Cheese &amp; Beans</b><span class="desc">top with cheese 0.65</span></span><span class="price">&pound;8.20</span></div>
+    <div class="row"><span class="name"><b>Tuna Mayo &amp; Sweetcorn</b></span><span class="price">&pound;8.90</span></div>
+    <div class="row"><span class="name"><b>Chilli con Carne &amp; Cheese</b></span><span class="price">&pound;9.90</span></div>
+    <div class="row"><span class="name"><b>Red Pepper Bean Chilli</b><span class="desc">top with cheese 0.65</span></span><span class="price">&pound;9.25</span></div>
+  </section>
+
+  <section>
+    <h2>Something Smaller</h2>
+    <p class="sub">Served all day</p>
+    <div class="row"><span class="name"><b>Homemade Sausage Roll</b></span><span class="price">&pound;3.50</span></div>
+    <div class="row"><span class="name"><b>Toasted Teacake with Butter</b><span class="desc">add jam 0.30</span></span><span class="price">&pound;3.50</span></div>
+    <div class="row"><span class="name"><b>Homemade Cheddar Scone</b><span class="desc">add chutney 0.30</span></span><span class="price">&pound;3.80</span></div>
+    <div class="row"><span class="name"><b>Homemade Fruit Scone</b><span class="desc">add jam 0.30, add cream 0.50</span></span><span class="price">&pound;3.80</span></div>
+    <div class="row"><span class="name"><b>Fairfield Farm Crisps</b></span><span class="price">&pound;1.50</span></div>
+  </section>
+
+  <section>
+    <h2>Kids Menu</h2>
+    <div class="row"><span class="name"><b>Beans on Toast Meal Deal</b><span class="desc">1 slice of toast with pom-bears &amp; orange/apple carton or fruit shoot</span></span><span class="price">&pound;5.70</span></div>
+    <div class="row"><span class="name"><b>Banger, Hash &amp; Beans</b><span class="desc">1 sausage, 2 hash browns &amp; beans</span></span><span class="price">&pound;5.50</span></div>
+    <div class="row"><span class="name"><b>Sandwich Meal Deal</b><span class="desc">ham, cheese or jam, with pom-bears &amp; orange/apple carton</span></span><span class="price">&pound;5.00</span></div>
+  </section>
+
+  <section>
+    <h2>Coffee</h2>
+    <p class="sub">Regular / Large &middot; Extra shot 0.75, syrup 0.75, oat or soya 0.30 &middot; Decaf available</p>
+    <div class="row"><span class="name"><b>Double Espresso</b></span><span class="price">&pound;2.70</span></div>
+    <div class="row"><span class="name"><b>Americano</b></span><span class="price">&pound;2.85 / 3.50</span></div>
+    <div class="row"><span class="name"><b>Cappuccino</b></span><span class="price">&pound;3.10 / 3.85</span></div>
+    <div class="row"><span class="name"><b>Latte</b></span><span class="price">&pound;3.10 / 3.85</span></div>
+    <div class="row"><span class="name"><b>Iced Latte</b></span><span class="price">&pound;3.30</span></div>
+    <div class="row"><span class="name"><b>Flat White</b></span><span class="price">&pound;3.00</span></div>
+    <div class="row"><span class="name"><b>Mocha</b></span><span class="price">&pound;3.35 / 3.85</span></div>
+    <div class="row"><span class="name"><b>Cortado</b></span><span class="price">&pound;2.85</span></div>
+    <div class="row"><span class="name"><b>Macchiato</b></span><span class="price">&pound;2.60</span></div>
+    <div class="row"><span class="name"><b>Babyccino</b></span><span class="price">&pound;1.25</span></div>
+  </section>
+
+  <section>
+    <h2>Tea</h2>
+    <p class="sub">Milk alternatives 0.30 (oat &amp; soya) &middot; Decaf available</p>
+    <div class="row"><span class="name"><b>Breakfast, Earl Grey or Green Tea</b><span class="desc">mug 1.95 &middot; pot for one 2.85 &middot; pot for two 4.25</span></span><span class="price"></span></div>
+    <div class="row"><span class="name"><b>Peppermint, Camomile or Red Berry</b><span class="desc">pot for one 2.95 &middot; pot for two 4.50</span></span><span class="price"></span></div>
+  </section>
+
+  <section>
+    <h2>Hot Chocolate</h2>
+    <p class="sub">Milk alternatives 0.30 (oat &amp; soya)</p>
+    <div class="row"><span class="name"><b>Hot Chocolate</b></span><span class="price">&pound;3.70</span></div>
+    <div class="row"><span class="name"><b>Rio's Hot Chocolate</b><span class="desc">with whipped cream, marshmallows &amp; a flake</span></span><span class="price">&pound;4.50</span></div>
+    <div class="row"><span class="name"><b>Kids Hot Chocolate</b><span class="desc">smaller, with whipped cream &amp; marshmallows</span></span><span class="price">&pound;3.00</span></div>
+  </section>
+
+  <section>
+    <h2>Cold Drinks</h2>
+    <div class="row"><span class="name"><b>Milkshakes</b><span class="desc">with whipped cream &amp; sprinkles &mdash; chocolate, vanilla, strawberry or banana</span></span><span class="price">&pound;4.50</span></div>
+    <div class="row"><span class="name"><b>Orange or Apple Juice</b></span><span class="price">&pound;2.10</span></div>
+    <div class="row"><span class="name"><b>Cans</b><span class="desc">diet coke, coke, lemonade, orange/apple tango</span></span><span class="price">&pound;2.20</span></div>
+    <div class="row"><span class="name"><b>Local Fruit Juices</b><span class="desc">please ask for flavours</span></span><span class="price">&pound;3.50</span></div>
+    <div class="row"><span class="name"><b>Sanpellegrino</b><span class="desc">orange or lemon</span></span><span class="price">&pound;2.30</span></div>
+    <div class="row"><span class="name"><b>Fruit Shoot / Juice Carton</b></span><span class="price">&pound;1.50</span></div>
+    <div class="row"><span class="name"><b>Bottled Water</b><span class="desc">still or sparkling</span></span><span class="price">&pound;1.60</span></div>
+  </section>
+
+  <section>
+    <h2>The Mini Bar</h2>
+    <p class="sub">From 11am</p>
+    <div class="row"><span class="name"><b>Prosecco</b><span class="desc">20cl</span></span><span class="price">&pound;6.00</span></div>
+    <div class="row"><span class="name"><b>White Wine</b><span class="desc">187ml</span></span><span class="price">&pound;4.75</span></div>
+    <div class="row"><span class="name"><b>Red Wine</b><span class="desc">187ml</span></span><span class="price">&pound;4.75</span></div>
+    <div class="row"><span class="name"><b>Bottled Beer</b></span><span class="price">&pound;4.00</span></div>
+  </section>
+
+  <p class="note">All food is made to order &mdash; at busier times there may be a longer wait. Please tell us of any allergies, intolerances or dietary requirements. We are a very small kitchen and cannot guarantee allergen traces do not cross over.</p>
+
+  <div class="back">
+    <a href="index.html">Back to Home</a>
+  </div>
+
+  <footer>
+    23 High Street, Manningtree, CO11 1BY &middot; 01206 393100
+  </footer>
+</body>
+</html>
